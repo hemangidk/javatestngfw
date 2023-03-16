@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:75%;text-align:center;border-bottom:1px solid #000}
+</style>
+</head>
+<body>
+<center><h1>Test Results - 2022 - Sep- 29 12:28:23</h1></center><table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><th colspan="10">ENV URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</th></tr>
+<tr><th colspan="10">Simple Smoke Test Suite Parallel Execution</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Simple Smoke Test</b></a></td><td class="numi">5</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">null</td></td>
+<td class="numi">12:27:39</td></td>
+<td class="numi">12:28:12</td></td>
+<td class="numi">00:00:32</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr id="t1"><th colspan="5">Simple Smoke Test &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.misc.misctest.sampleTest</td><td><a href="#m1"><b>level4</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Induced failure for testing: level4<br/></td><td style="text-align:right">12:27:50</td><td class="numi">00:00:00</td></tr>
+<tr><th colspan="5">Simple Smoke Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.misc.misctest.sampleTest</td><td><a href="#m2"><b>level2</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:27:47</td><td class="numi">00:00:00</td></tr><tr class="passedodd"><td><a href="#m3"><b>level3</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:27:49</td><td class="numi">00:00:00</td></tr>
+<tr class="passedeven"><td>com.orangehrm.orangeHRMLoginTest</td><td><a href="#m4"><b>login</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:27:47</td><td class="numi">00:00:14</td></tr>
+<tr class="passedodd"><td>com.orangehrm.orangeHRMLoginWithDtPrverTest</td><td><a href="#m5"><b>loginWithDaPrverTest</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:27:47</td><td class="numi">00:00:14</td></tr>
+<tr class="passedeven"><td>com.orangehrm.orangeHRMLoginWithExclDaPrverTest</td><td><a href="#m6"><b>loginWithExclDaPrver</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:27:57</td><td class="numi">00:00:14</td></tr>
+</table>
+<h1>Test result details</h1>
+<h4 id="m1">com.misc.misctest.sampleTest : level4</h4>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th></tr>
+<tr class="param stripe"><td>public void com.misc.misctest.sampleTest.level4(java.lang.reflect.Method)</td>
+</tr>
+<tr><td>
+<h3>Test Messages</h3>
+Failure Time Stamp:2022_Sep_29_12_27_50<br/>
+com.aventstack.extentreports.model.ScreenCapture@4c06c8d0<br/>
+<h3>Failure</h3>
+<div class="stacktrace">java.lang.AssertionError: Induced failure for testing: level4
+	at com.misc.misctest.sampleTest.level4(sampleTest.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 13 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h4 id="m2">com.misc.misctest.sampleTest : level2</h4>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th></tr>
+<tr class="param stripe"><td>public void com.misc.misctest.sampleTest.level2(java.lang.reflect.Method)</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h4 id="m3">com.misc.misctest.sampleTest : level3</h4>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th></tr>
+<tr class="param stripe"><td>public void com.misc.misctest.sampleTest.level3(java.lang.reflect.Method)</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h4 id="m4">com.orangehrm.orangeHRMLoginTest : login</h4>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th></tr>
+<tr class="param stripe"><td>public void com.orangehrm.orangeHRMLoginTest.login(java.lang.reflect.Method) throws
+    java.lang.InterruptedException</td>
+</tr>
+<tr><td>
+login successful for user: Admin<br/>
+capturing screen shot: After Login<br/>
+com.aventstack.extentreports.model.ScreenCapture@4c6207ef<br/>
+clicked on logout Successful<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h4 id="m5">com.orangehrm.orangeHRMLoginWithDtPrverTest : loginWithDaPrverTest</h4>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th></tr>
+<tr class="param stripe"><td>Admin</td>
+<td>admin123</td>
+<td>public void
+    com.orangehrm.orangeHRMLoginWithDtPrverTest.loginWithDaPrverTest(java.lang.String,java.lang.String,java.lang.reflect.Method)
+    throws java.lang.Exception</td>
+</tr>
+<tr><td colspan="3">
+login successful for user: Admin<br/>
+capturing screen shot: After Login<br/>
+com.aventstack.extentreports.model.ScreenCapture@5f94d331<br/>
+clicked on logout Successful<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h4 id="m6">com.orangehrm.orangeHRMLoginWithExclDaPrverTest : loginWithExclDaPrver</h4>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto; cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th></tr>
+<tr class="param stripe"><td>Admin</td>
+<td>admin123</td>
+<td>public void
+    com.orangehrm.orangeHRMLoginWithExclDaPrverTest.loginWithExclDaPrver(java.lang.String,java.lang.String,java.lang.reflect.Method)
+    throws java.lang.Exception</td>
+</tr>
+<tr><td colspan="3">
+login successful for user: Admin<br/>
+capturing screen shot: After Login<br/>
+com.aventstack.extentreports.model.ScreenCapture@110559eb<br/>
+clicked on logout Successful<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center>****** End of customized TestNG Report ****** </center>
+</body></html>
